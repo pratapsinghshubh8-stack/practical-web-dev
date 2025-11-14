@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Centering</title>
+    <style>
+        /* CSS to center the content */
+        .container {
+            display: flex;
+            justify-content: center; /* Centers content horizontally */
+            align-items: center;     /* Centers content vertically */
+            height: 200px;           /* Sets a height for the container to demonstrate vertical centering */
+            border: 2px solid #333;  /* Optional: adds a border to visualize the container boundaries */
+            background-color: #f0f0f0; /* Optional: adds a background color */
+        }
+
+        .container p {
+            margin: 0; /* Resets default paragraph margin for cleaner centering */
+            font-family: sans-serif;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <p>Centered with Flexbox!</p>
+    </div>
+
+</body>
+</html>
