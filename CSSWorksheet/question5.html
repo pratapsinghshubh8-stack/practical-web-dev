@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  img {
+    float: left;
+    margin-right: 15px; /* Adds space between the image and the text */
+    width: 150px; /* Adjust image size as needed */
+    height: auto;
+  }
+  .clear-paragraph {
+    clear: both;
+    margin-top: 10px; /* Adds space above the cleared paragraph */
+  }
+</style>
+</head>
+<body>
+
+  <img src='image.jpg' alt='Example' />
+  <p>This paragraph will wrap around the image. The float property pulls the image to the left, allowing block-level elements like this paragraph to flow around it. This is a classic layout technique for magazine and news-style content to interleave images with descriptive text effectively.</p>
+
+  <p class="clear-paragraph">This is a new paragraph that uses the clear: both; property. It will not appear next to the floated image above it but will instead start on a new line below the entire image, regardless of which side it was floated on. This is useful for separating distinct sections of content.</p>
+
+</body>
+</html>
