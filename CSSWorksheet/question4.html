@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline vs Block Demo</title>
+    <style>
+        /* CSS styles to swap display properties */
+        p {
+            /* Default is display: block; overriding to display: inline */
+            display: inline;
+            border: 1px solid red; /* Visual aid */
+            padding: 5px;
+            margin: 5px; /* Horizontal margins work, vertical do not visually affect layout */
+        }
+
+        span {
+            /* Default is display: inline; overriding to display: block */
+            display: block;
+            border: 1px solid blue; /* Visual aid */
+            padding: 10px;
+            margin-top: 15px; /* Vertical margins now work */
+            width: 200px; /* Width property now works */
+        }
+
+        .default-container {
+            border: 2px dashed gray;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Default Behavior (No CSS applied in this section)</h2>
+    <div class="default-container">
+        <p style="border: 1px solid black; margin: 0; padding: 0;"> This is a paragraph with default display: block. </p>
+        <span style="border: 1px solid black; margin: 0; padding: 0;"> This is a span with default display: inline.</span>
+        <span style="border: 1px solid black; margin: 0; padding: 0;"> This is a second span.</span>
+    </div>
+
+    <h2>Swapped Behavior (Using CSS in head section)</h2>
+    <div class="default-container">
+        <!-- p is now inline, span is now block -->
+        <p> This is a paragraph now acting as an inline element. </p>
+        <span> This is a span now acting as a block element.</span>
+        <p> This is another paragraph (inline).</p>
+    </div>
+
+</body>
+</html>
