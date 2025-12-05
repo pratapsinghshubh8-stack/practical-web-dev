@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flexbox Gallery</title>
+    <style>
+        /* Basic reset for images for better rendering */
+        img {
+            max-width: 100%; /* Ensures images don't overflow their container */
+            height: auto;   /* Maintains aspect ratio */
+            display: block; /* Helps with spacing issues */
+        }
+
+        /* The Flex container */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap; /* Allows items to wrap onto the next line */
+            justify-content: center; /* Centers images within the container */
+            gap: 10px; /* Adds consistent space between images */
+            padding: 10px; /* Adds some space around the entire gallery */
+            max-width: 1200px; /* Optional: max width for the gallery on large screens */
+            margin: 0 auto; /* Optional: centers the gallery on the page */
+        }
+
+        /* Individual image styling */
+        .gallery img {
+            /* Set a flexible width: 
+               calc(33.33% - 10px) makes them roughly 1/3 of the container width minus the gap space.
+               Using a fixed min-width ensures they don't get too small. 
+            */
+            flex: 1 1 calc(33.33% - 10px); 
+            min-width: 150px; /* Prevents images from becoming too narrow */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+            border-radius: 5px; /* Optional: adds rounded corners */
+            /* Add temporary background colors and heights if you don't have actual images */
+            background-color: #ddd;
+            height: 200px; 
+            object-fit: cover; /* Ensures temporary images cover the area nicely */
+        }
+
+        /* Optional: Media Query for smaller screens (e.g., mobile) */
+        @media (max-width: 600px) {
+            .gallery img {
+                flex: 1 1 100%; /* Makes each image take the full width (one per row) */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class='gallery'>
+        <!-- Replace src attributes with paths to your actual images (photo1.jpg, etc.) -->
+        <img src='photo1.jpg' alt="Photo 1">
+        <img src='photo2.jpg' alt="Photo 2">
+        <img src='photo3.jpg' alt="Photo 3">
+        <img src='photo4.jpg' alt="Photo 4">
+        <img src='photo5.jpg' alt="Photo 5">
+        <img src='photo6.jpg' alt="Photo 6">
+        <img src='photo7.jpg' alt="Photo 7">
+        <img src='photo8.jpg' alt="Photo 8">
+    </div>
+
+</body>
+</html>

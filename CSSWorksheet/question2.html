@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Priority Test</title>
+    <style>
+        .highlight {
+            /* Class styles (lower priority) */
+            color: blue;
+            font-weight: normal;
+        }
+
+        #special {
+            /* ID styles (higher priority) */
+            color: red;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- The first paragraph will use the ID (#special) styles -->
+    <p id='special' class='highlight'>CSS Priority Test - ID should win</p>
+
+    <!-- The second paragraph only has the class (.highlight) applied -->
+    <p class='highlight'>This is a regular highlight test</p>
+
+    <!-- The third paragraph has no styles applied -->
+    <p>This paragraph has no styles</p>
+
+    <h3>Observations:</h3>
+    <p>The first paragraph, "CSS Priority Test - ID should win," appears in red, bold, and underlined text. This demonstrates that the ID selector (#special) has a higher priority (specificity) than the class selector (.highlight) in CSS. When both conflict over properties like color and font-weight, the ID's rules are applied.</p>
+
+</body>
+</html>
