@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card Layout</title>
+    <style>
+        body {
+            /* Basic styling for demonstration purposes */
+            font-family: sans-serif;
+            background-color: #f4f4f4;
+            /* Centers the card on the screen */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .product {
+            /* Width/Height */
+            width: 200px; /* Defines the fixed width of the card */
+
+            /* Border */
+            border: 1px solid #ccc; /* Adds a visible border */
+            border-radius: 8px; /* Rounds the corners */
+            background-color: #fff; /* White background */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+
+            /* Padding */
+            padding: 15px; /* Space between content and border */
+
+            /* Margin */
+            margin: 20px; /* Space outside the border (separates from other elements) */
+        }
+
+        .product h3 {
+            /* Specific margin adjustments for internal elements */
+            margin-top: 0; /* Removes default top margin */
+            margin-bottom: 10px; /* Adds space below the heading */
+            color: #333;
+        }
+
+        .product p {
+            /* Specific margin adjustments for internal elements */
+            margin-bottom: 0; /* Removes default bottom margin */
+            color: #007BFF;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <image src="t-shirt.jpeg" alt="Product Image" style="width:200px; height:auto; border-top-left-radius:8px; border-top-right-radius:8px;">
+
+    <!-- The HTML structure provided in the prompt -->
+    <div class='product'>
+        <h3>White Plane t-shirt</h3>
+        <p>Price: $25</p>
+    </div>
+
+</body>
+</html>
