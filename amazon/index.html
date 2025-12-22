@@ -1,160 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Amazon Clone</title>
-  <style>
-    /* Reset */
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-
-    /* Header */
-    header {
-      background-color: #131921;
-      color: white;
-      display: flex;
-      align-items: center;
-      padding: 10px 20px;
-    }
-
-    header img {
-      width: 100px;
-      cursor: pointer;
-    }
-
-    .search-bar {
-      flex: 1;
-      margin: 0 20px;
-      display: flex;
-    }
-
-    .search-bar input {
-      flex: 1;
-      padding: 8px;
-      border: none;
-      border-radius: 2px 0 0 2px;
-    }
-
-    .search-bar button {
-      padding: 8px 12px;
-      border: none;
-      background-color: #febd69;
-      border-radius: 0 2px 2px 0;
-      cursor: pointer;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-    }
-
-    .nav-links a {
-      color: white;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    /* Main */
-    main {
-      padding: 20px;
-    }
-
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 20px;
-    }
-
-    .product {
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      padding: 10px;
-      text-align: center;
-      background-color: #fff;
-    }
-
-    .product img {
-      width: 150px;
-      height: 150px;
-      object-fit: contain;
-      margin-bottom: 10px;
-    }
-
-    .product h3 {
-      font-size: 16px;
-      margin-bottom: 5px;
-    }
-
-    .product p {
-      font-weight: bold;
-      color: #b12704;
-    }
-
-    .product button {
-      padding: 8px 12px;
-      margin-top: 10px;
-      border: none;
-      background-color: #f0c14b;
-      cursor: pointer;
-      border-radius: 2px;
-    }
-
-    /* Footer */
-    footer {
-      background-color: #131921;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>ShopHub - Online Store</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Logo">
-    <div class="search-bar">
-      <input type="text" placeholder="Search products">
-      <button>Search</button>
+<header class="top-nav">
+    <div class="nav-logo">
+        <a href="index.html">ShopHub</a>
+    </div>
+    <div class="nav-search">
+        <input type="text" placeholder="Search for products, brands and more">
+        <button>Search</button>
     </div>
     <div class="nav-links">
-      <a href="#">Hello, Sign in</a>
-      <a href="#">Orders</a>
-      <a href="#">Cart</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart (0)</a>
+        <a href="#">Login</a>
     </div>
-  </header>
+</header>
 
-  <main>
-    <div class="product-grid">
-      <div class="product">
-        <img src="https://via.placeholder.com/150" alt="Product 1">
-        <h3>Product 1</h3>
-        <p>$19.99</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="product">
-        <img src="https://via.placeholder.com/150" alt="Product 2">
-        <h3>Product 2</h3>
-        <p>$29.99</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="product">
-        <img src="https://via.placeholder.com/150" alt="Product 3">
-        <h3>Product 3</h3>
-        <p>$39.99</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="product">
-        <img src="https://via.placeholder.com/150" alt="Product 4">
-        <h3>Product 4</h3>
-        <p>$49.99</p>
-        <button>Add to Cart</button>
-      </div>
+<nav class="sub-nav">
+    <a href="#">Mobiles</a>
+    <a href="#">Electronics</a>
+    <a href="#">Fashion</a>
+    <a href="#">Home</a>
+    <a href="#">Appliances</a>
+    <a href="#">Grocery</a>
+</nav>
+
+<section class="hero-banner">
+    <div class="hero-text">
+        <h1>Big Savings Days</h1>
+        <p>Up to 60% off on top brands.</p>
+        <a href="products.html" class="btn-primary">Shop Now</a>
     </div>
-  </main>
+</section>
 
-  <footer>
-    &copy; 2025 My Amazon Clone. All rights reserved.
-  </footer>
+<section class="section-heading">
+    <h2>Today’s Deals</h2>
+</section>
+
+<section class="product-grid">
+    <a href="product.html" class="product-card">
+        <div class="product-img placeholder"></div>
+        <h3>Smartphone X</h3>
+        <p class="price">₹19,999</p>
+        <p class="old-price">₹24,999</p>
+        <p class="discount">20% off</p>
+    </a>
+    <a href="product.html" class="product-card">
+        <div class="product-img placeholder"></div>
+        <h3>Wireless Headphones</h3>
+        <p class="price">₹2,499</p>
+        <p class="old-price">₹3,999</p>
+        <p class="discount">38% off</p>
+    </a>
+    <a href="product.html" class="product-card">
+        <div class="product-img placeholder"></div>
+        <h3>LED TV 43"</h3>
+        <p class="price">₹27,999</p>
+        <p class="old-price">₹35,999</p>
+        <p class="discount">22% off</p>
+    </a>
+    <a href="product.html" class="product-card">
+        <div class="product-img placeholder"></div>
+        <h3>Laptop Pro</h3>
+        <p class="price">₹54,999</p>
+        <p class="old-price">₹69,999</p>
+        <p class="discount">21% off</p>
+    </a>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-columns">
+        <div>
+            <h4>About</h4>
+            <a href="#">Contact Us</a>
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+        </div>
+        <div>
+            <h4>Help</h4>
+            <a href="#">Payments</a>
+            <a href="#">Shipping</a>
+            <a href="#">Cancellation</a>
+        </div>
+        <div>
+            <h4>Policy</h4>
+            <a href="#">Return Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy</a>
+        </div>
+        <div>
+            <h4>Social</h4>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">YouTube</a>
+        </div>
+    </div>
+    <p class="footer-bottom">© 2025 ShopHub</p>
+</footer>
 </body>
 </html>

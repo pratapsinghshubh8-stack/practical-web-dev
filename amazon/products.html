@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShopHub - All Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top-nav">
+    <div class="nav-logo">
+        <a href="index.html">ShopHub</a>
+    </div>
+    <div class="nav-search">
+        <input type="text" placeholder="Search for products, brands and more">
+        <button>Search</button>
+    </div>
+    <div class="nav-links">
+        <a href="products.html" class="active">Products</a>
+        <a href="cart.html">Cart (0)</a>
+        <a href="#">Login</a>
+    </div>
+</header>
+
+<nav class="sub-nav">
+    <a href="#" class="active">All</a>
+    <a href="#">Mobiles</a>
+    <a href="#">Laptops</a>
+    <a href="#">TVs</a>
+    <a href="#">Accessories</a>
+</nav>
+
+<main class="layout">
+    <aside class="filters">
+        <h3>Filters</h3>
+        <div class="filter-block">
+            <h4>Price</h4>
+            <label><input type="radio" name="price"> Under ₹10,000</label>
+            <label><input type="radio" name="price"> ₹10,000 - ₹25,000</label>
+            <label><input type="radio" name="price"> ₹25,000 - ₹50,000</label>
+            <label><input type="radio" name="price"> Above ₹50,000</label>
+        </div>
+        <div class="filter-block">
+            <h4>Customer Rating</h4>
+            <label><input type="checkbox"> 4★ & above</label>
+            <label><input type="checkbox"> 3★ & above</label>
+        </div>
+        <div class="filter-block">
+            <h4>Brand</h4>
+            <label><input type="checkbox"> Brand A</label>
+            <label><input type="checkbox"> Brand B</label>
+            <label><input type="checkbox"> Brand C</label>
+        </div>
+    </aside>
+
+    <section class="product-list">
+        <h2>All Products</h2>
+
+        <a href="product.html" class="list-card">
+            <div class="list-img placeholder"></div>
+            <div class="list-info">
+                <h3>Smartphone X</h3>
+                <p class="rating">4.3 ★ | 2,345 ratings</p>
+                <p class="features">6 GB RAM, 128 GB ROM, 5000 mAh Battery</p>
+            </div>
+            <div class="list-price">
+                <p class="price">₹19,999</p>
+                <p class="old-price">₹24,999</p>
+                <p class="discount">20% off</p>
+            </div>
+        </a>
+
+        <a href="product.html" class="list-card">
+            <div class="list-img placeholder"></div>
+            <div class="list-info">
+                <h3>Laptop Pro 14"</h3>
+                <p class="rating">4.5 ★ | 1,102 ratings</p>
+                <p class="features">16 GB RAM, 512 GB SSD, i5 12th Gen</p>
+            </div>
+            <div class="list-price">
+                <p class="price">₹54,999</p>
+                <p class="old-price">₹69,999</p>
+                <p class="discount">21% off</p>
+            </div>
+        </a>
+
+        <a href="product.html" class="list-card">
+            <div class="list-img placeholder"></div>
+            <div class="list-info">
+                <h3>Smart TV 43"</h3>
+                <p class="rating">4.2 ★ | 789 ratings</p>
+                <p class="features">4K Ultra HD, 60 Hz, 3 HDMI ports</p>
+            </div>
+            <div class="list-price">
+                <p class="price">₹27,999</p>
+                <p class="old-price">₹35,999</p>
+                <p class="discount">22% off</p>
+            </div>
+        </a>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p class="footer-bottom">© 2025 ShopHub</p>
+</footer>
+</body>
+</html>

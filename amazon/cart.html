@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShopHub - Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top-nav">
+    <div class="nav-logo">
+        <a href="index.html">ShopHub</a>
+    </div>
+    <div class="nav-search">
+        <input type="text" placeholder="Search for products, brands and more">
+        <button>Search</button>
+    </div>
+    <div class="nav-links">
+        <a href="products.html">Products</a>
+        <a href="cart.html" class="active">Cart (1)</a>
+        <a href="#">Login</a>
+    </div>
+</header>
+
+<main class="layout cart-layout">
+    <section class="cart-items">
+        <h2>My Cart (1 item)</h2>
+
+        <div class="cart-card">
+            <div class="cart-img placeholder"></div>
+            <div class="cart-info">
+                <h3>Smartphone X (Blue, 128 GB)</h3>
+                <p class="features">6 GB RAM | 128 GB ROM | 5000 mAh Battery</p>
+                <p class="seller">Seller: ABCRetail</p>
+                <div class="qty-row">
+                    <button class="qty-btn">-</button>
+                    <span>1</span>
+                    <button class="qty-btn">+</button>
+                    <button class="link-btn">Remove</button>
+                </div>
+            </div>
+            <div class="cart-price">
+                <p class="price">₹19,999</p>
+                <p class="old-price">₹24,999</p>
+                <p class="discount">20% off</p>
+            </div>
+        </div>
+    </section>
+
+    <aside class="price-summary">
+        <h3>Price Details</h3>
+        <div class="summary-row">
+            <span>Price (1 item)</span>
+            <span>₹24,999</span>
+        </div>
+        <div class="summary-row">
+            <span>Discount</span>
+            <span class="green">- ₹5,000</span>
+        </div>
+        <div class="summary-row">
+            <span>Delivery Charges</span>
+            <span class="green">Free</span>
+        </div>
+        <div class="summary-row total">
+            <span>Total Amount</span>
+            <span>₹19,999</span>
+        </div>
+        <p class="save-msg">You will save ₹5,000 on this order.</p>
+        <a href="#" class="btn-buy full">Place Order</a>
+    </aside>
+</main>
+
+<footer class="site-footer">
+    <p class="footer-bottom">© 2025 ShopHub</p>
+</footer>
+</body>
+</html>
