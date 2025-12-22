@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Amazon Style Student Portal</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#eaeded;
+}
+
+/* HEADER */
+.header{
+    background:#131921;
+    color:white;
+    display:flex;
+    align-items:center;
+    padding:12px 20px;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    color:#f3a847;
+    font-size:26px;
+    font-weight:bold;
+    margin-right:20px;
+}
+
+.search{
+    flex:1;
+    display:flex;
+}
+
+.search input{
+    width:100%;
+    padding:8px;
+    border:none;
+}
+
+.search button{
+    background:#febd69;
+    border:none;
+    padding:8px 15px;
+    cursor:pointer;
+}
+
+/* NAV */
+.nav{
+    background:#232f3e;
+    padding:10px 20px;
+}
+
+.nav a{
+    color:white;
+    margin-right:20px;
+    text-decoration:none;
+    font-size:14px;
+}
+
+/* CONTENT */
+.container{
+    max-width:1200px;
+    margin:30px auto;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    margin-bottom:30px;
+    border-radius:4px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.15);
+}
+
+.card h2{
+    margin-bottom:15px;
+}
+
+/* PROFILE */
+.profile{
+    display:flex;
+    gap:30px;
+}
+
+.profile img{
+    width:150px;
+    border:1px solid #ddd;
+    border-radius:4px;
+}
+
+.profile p{
+    margin:8px 0;
+}
+
+/* TABLE */
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+td{
+    border:1px solid #ddd;
+    padding:12px;
+}
+
+td:first-child{
+    background:#f7f7f7;
+    font-weight:bold;
+    width:30%;
+}
+
+/* FOOTER */
+.footer{
+    background:#131921;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <div class="logo">amazon</div>
+    <div class="search">
+        <input type="text" placeholder="Search Student Information">
+        <button>🔍</button>
+    </div>
+</div>
+
+<!-- NAV BAR (WORKING LINKS) -->
+<div class="nav">
+    <a href="#profile">Profile</a>
+    <a href="#personal">Personal Info</a>
+    <a href="#skills">Skills</a>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <!-- PROFILE -->
+    <div class="card" id="profile">
+        <h2>Student Profile</h2>
+        <div class="profile">
+            <img src="https://i.imgur.com/8Km9tLL.png">
+            <div>
+                <p><b>Name:</b> Amit Kumar</p>
+                <p><b>Course:</b> B.Tech Computer Science</p>
+                <p><b>Contact:</b> 1234563421</p>
+                <p><b>Email:</b> amitkumar@example.com</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PERSONAL INFO -->
+    <div class="card" id="personal">
+        <h2>Personal Information</h2>
+        <table>
+            <tr><td>Full Name</td><td>Amit Kumar</td></tr>
+            <tr><td>Roll Number</td><td>CS2025A12</td></tr>
+            <tr><td>Date of Birth</td><td>12 March 2006</td></tr>
+            <tr><td>Gender</td><td>Male</td></tr>
+            <tr><td>Email</td><td>amitkumar@example.com</td></tr>
+        </table>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="card" id="skills">
+        <h2>Skills & Interests</h2>
+        <p><b>Technical Skills</b></p>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>Basic Python</li>
+            <li>MS Office</li>
+        </ul>
+
+        <p><b>Hobbies</b></p>
+        <ol>
+            <li>Reading Tech Blogs</li>
+            <li>Playing Chess</li>
+            <li>Cycling</li>
+        </ol>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    © 2025 Amazon-Style Student Portal
+</div>
+
+</body>
+</html>
